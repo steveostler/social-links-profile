@@ -1,0 +1,78 @@
+@font-face {
+    font-family: "Inter";
+    src: url(./assets/fonts/Inter-VariableFont_slnt\,wght.ttf);
+}
+:root {
+    --primary-green: hsl(75,94%,57%);
+    --neutral-white: hsl(0, 0%, 100%);
+    --neutral-grey: hsl(0, 0%, 20%);
+    --neutral-dark-grey: hsl(0,0%,12%);
+    --neutral-off-black: hsl(0,0%, 8%);
+}
+body{
+    background-color: var(--neutral-off-black);
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    display: grid;
+    grid: 1fr min-content / 1fr;
+    place-items: center;
+    min-height:100vh;
+}
+
+.profile{
+    background-color: var(--neutral-dark-grey);
+    color:hsl(0,0%,100%);
+    max-width:400px;
+    padding:2rem;
+    margin:1rem;
+    border-radius: .75rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+
+.profile img{
+    width: 88px;
+    border-radius: 50%;
+}
+
+.profile h1{
+    font-size: 1.75rem;
+}
+
+.profile .location{
+    color: var(--primary-green);
+    margin: .5rem 0 1.5rem;
+    font-weight: 700;
+}
+
+.profile ul{
+    list-style-type: none;
+    margin-top: 1.75rem;
+    padding: 0;
+    width: 279px;
+}
+
+.profile ul li:not(:last-child){
+    margin-bottom: 1rem;
+}
+
+.profile ul li a {
+    display: block;
+    background-color:  var(--neutral-grey);
+    color: var(--neutral-white);
+    font-weight: 600;padding: 1rem;
+    border-radius: .5rem;
+    text-decoration: none;
+}
+
+.profile ul li a:hover{
+    background-color:var(--primary-green);
+    color: var(--neutral-off-black);
+}
+
+/* .attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); } */
+
